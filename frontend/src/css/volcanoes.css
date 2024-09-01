@@ -1,0 +1,34 @@
+/* CSS for volcanoes search page */
+
+.searchEngine form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .searchEngine button{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .searchEngine label{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .volcanoeInformation p{
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 30%);
+    margin: 0;
+  }
+  
+  .volcanoes{
+    min-height: 100vh;
+    text-align: center;
+    }
+  .results {
+    display: flex;
+    justify-content: center;
+    text-align: left; 
+  }

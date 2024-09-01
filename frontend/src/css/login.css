@@ -1,0 +1,35 @@
+
+/* CSS for the login form */
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/loginbackground.avif");
+  position: relative;
+}
+/* url for image: https://www.nationalgeographic.com/travel/article/what-to-know-volcano-tourism-in-iceland */
+.loginLabel
+{
+color: rgb(255, 255, 255);
+}
+  
+.white-text {
+color: white;
+}
+  
+.login form {
+width: 400px;
+border-width: 1px;
+box-shadow: rgba(187, 136, 136, 0.16) 1px 1px 15px;
+padding-top: 30px;
+padding-bottom: 30px;
+border-radius: 8px;
+background-color: rgba(0, 0, 0, 0.476);
+box-shadow: rgba(187, 136, 136, 0.16) 1px 1px 15px; 
+}
+  

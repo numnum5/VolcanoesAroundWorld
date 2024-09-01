@@ -1,0 +1,44 @@
+/* CSS for redirect page */
+
+.redirect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #1e1e1e;
+    text-align: center;
+  }
+
+.redirect h1{
+  color: green;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.redirect p{
+  color: black;
+}
+
+.spinner{
+  text-align: center;
+}
+
+.card {
+  width: auto;
+  height: auto;
+  background-color: #ffffff;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.476);
+  box-shadow: rgba(187, 136, 136, 0.16) 1px 1px 15px; 
+  }
+  

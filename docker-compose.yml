@@ -1,0 +1,40 @@
+services:
+  # Container for frontend React application
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - BASE_URL=http://localhost:3000
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+  # Container for backend Express application
+  backend:
+    build:
+      context: ./backend
+      dockerfile: dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - JWT_SECRET=lcTz4M507jQO7gFuoglgIeDUktCgAfI0
+      - PORT=3000
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=root_password
+      - DB_NAME=volcanoes
+  db:
+    image: mysql:latest
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: volcanoes
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+volumes:
+  db_data:

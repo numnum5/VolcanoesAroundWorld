@@ -1,0 +1,33 @@
+/* CSS for header and navigation bar */
+
+/* Styling for the header */
+header {
+    background-color: #000000;
+    padding: 10px; 
+    text-align: center;
+  }
+  
+  /* Styling for navigation links */
+  nav a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: 0.3s ease all;  
+  }
+  
+  /* Styling for active navigation link */
+  .active {
+    color: rgb(135, 135, 135);
+  }
+  
+  /* Styling for navigation link hover effect */
+  nav a:hover {
+    background: #444; 
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  } 
+  
